@@ -362,6 +362,18 @@
     padding:5px 10px;
     border-radius:3px;
   }
+  .program-tags span.tag-free{
+    background:var(--keystone-gold);
+    border-color:var(--keystone-gold);
+    color:var(--keystone-blue-dark);
+    font-weight:700;
+  }
+  .program-tags span.tag-fee{
+    background:var(--keystone-blue);
+    border-color:var(--keystone-blue);
+    color:var(--white);
+    font-weight:700;
+  }
 
   /* ---------- Why join ---------- */
   .why{background:var(--keystone-blue); color:var(--white);}
@@ -723,7 +735,7 @@
         <text x="100" y="145" text-anchor="middle" font-family="Anton, sans-serif" font-size="50" letter-spacing="2" fill="#F6F3EC">BILLS</text>
       </svg>
       <h3>Est. 1976</h3>
-      <p>Proudly serving young athletes and families in Odessa, FL and the surrounding community.</p>
+      <p>Proudly serving young athletes and families in Odessa, FL and the surrounding community. Proud members of the <strong>Florida Elite League</strong>.</p>
     </div>
   </div>
 </section>
@@ -745,7 +757,7 @@
           <div class="program-tags">
             <span>Learn the Basics</span>
             <span>No Contact</span>
-            <span>Fun First</span>
+            <span class="tag-free">Free</span>
           </div>
         </div>
       </div>
@@ -758,6 +770,7 @@
             <span>Tackle Football</span>
             <span>Fundamentals</span>
             <span>Fun First</span>
+            <span class="tag-fee">$250 / Season</span>
           </div>
         </div>
       </div>
@@ -770,6 +783,7 @@
             <span>Tackle Football</span>
             <span>Positions</span>
             <span>Team Plays</span>
+            <span class="tag-fee">$250 / Season</span>
           </div>
         </div>
       </div>
@@ -782,6 +796,7 @@
             <span>Tackle Football</span>
             <span>Strategy</span>
             <span>Specialization</span>
+            <span class="tag-fee">$250 / Season</span>
           </div>
         </div>
       </div>
@@ -794,6 +809,7 @@
             <span>Tackle Football</span>
             <span>Advanced Schemes</span>
             <span>Leadership</span>
+            <span class="tag-fee">$250 / Season</span>
           </div>
         </div>
       </div>
@@ -806,6 +822,7 @@
             <span>Tackle Football</span>
             <span>Competitive Play</span>
             <span>Game Ready</span>
+            <span class="tag-fee">$250 / Season</span>
           </div>
         </div>
       </div>
@@ -956,7 +973,7 @@
             </div>
             <div>
               <label for="playerAge">Athlete Age</label>
-              <input type="number" id="playerAge" name="playerAge" min="4" max="14" required>
+              <input type="number" id="playerAge" name="playerAge" min="3" max="14" required>
             </div>
           </div>
           <div class="form-row full">
@@ -973,12 +990,21 @@
             <div>
               <label for="division">Interested Division</label>
               <select id="division" name="division">
-                <option>Mascots (Ages 4&ndash;6)</option>
-                <option>6U (Ages 5&ndash;6)</option>
-                <option>8U (Ages 7&ndash;8)</option>
-                <option>10U (Ages 9&ndash;10)</option>
-                <option>12U (Ages 11&ndash;12)</option>
-                <option>14U (Ages 13&ndash;14)</option>
+                <optgroup label="Football">
+                  <option>Mascots (Ages 4&ndash;6)</option>
+                  <option>6U (Ages 5&ndash;6)</option>
+                  <option>8U (Ages 7&ndash;8)</option>
+                  <option>10U (Ages 9&ndash;10)</option>
+                  <option>12U (Ages 11&ndash;12)</option>
+                  <option>14U (Ages 13&ndash;14)</option>
+                </optgroup>
+                <optgroup label="Cheerleading">
+                  <option>Little Legends (Ages 3&ndash;5)</option>
+                  <option>Tiny Thunder (Ages 6&ndash;7)</option>
+                  <option>Sparkling Hurricanes (Ages 8&ndash;9)</option>
+                  <option>Dynamite Divas (Ages 10&ndash;11)</option>
+                  <option>Fierce Heat (Ages 12&ndash;14)</option>
+                </optgroup>
                 <option>Not Sure Yet</option>
               </select>
             </div>
@@ -1005,7 +1031,7 @@
           </svg>
           <div class="footer-brand-text">Keystone Bills</div>
         </div>
-        <p>A community youth football program built on teamwork, fundamentals, and fun. New players always welcome.</p>
+        <p>A community youth football program built on teamwork, fundamentals, and fun. New players always welcome. Proud members of the Florida Elite League.</p>
         <div class="footer-social">
           <a href="https://www.facebook.com/profile.php?id=61559928530484" aria-label="Facebook" target="_blank" rel="noopener">f</a>
           <a href="https://www.instagram.com/keystonebills_football/" aria-label="Instagram" target="_blank" rel="noopener">ig</a>
