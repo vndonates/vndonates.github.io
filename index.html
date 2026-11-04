@@ -308,9 +308,12 @@
   .about-copy p{margin-bottom:16px; color:var(--ink-soft); font-size:1.05rem;}
   .about-copy p strong{color:var(--ink);}
 
+  .keystone-outline{
+    padding:3px;
+    filter:drop-shadow(3px 0 0 var(--keystone-blue)) drop-shadow(-3px 0 0 var(--keystone-blue)) drop-shadow(0 3px 0 var(--keystone-blue)) drop-shadow(0 -3px 0 var(--keystone-blue));
+  }
   .keystone-frame{
     background:var(--white);
-    border:3px solid var(--keystone-blue);
     clip-path:polygon(14% 0%, 86% 0%, 100% 100%, 0% 100%);
     padding:52px 30px 40px;
     text-align:center;
@@ -637,7 +640,7 @@
     .stats-inner div:nth-child(2n){border-left:2px solid rgba(27,58,107,0.18);}
 
     .about{grid-template-columns:1fr; gap:40px;}
-    .keystone-frame{order:-1; max-width:320px; margin:0 auto;}
+    .keystone-outline{order:-1; width:100%; max-width:320px; margin:0 auto;}
 
     .programs-grid{grid-template-columns:1fr;}
     .why-grid{grid-template-columns:1fr; gap:28px;}
@@ -678,25 +681,6 @@
     font-weight:700;
   }
   .highlight-card p{color:var(--ink-soft); font-size:0.95rem;}
-
-  .league-banner{
-    background:var(--keystone-blue);
-    color:var(--white);
-    text-align:center;
-    padding:40px 24px;
-  }
-  .league-banner p{
-    font-family:'Space Mono',monospace;
-    letter-spacing:0.15em;
-    font-size:0.85rem;
-    color:var(--keystone-gold);
-    text-transform:uppercase;
-    margin-bottom:10px;
-  }
-  .league-banner h2{
-    color:var(--white);
-    font-size:clamp(1.8rem,4vw,2.8rem);
-  }
 
   @media(max-width:880px){
     .home-highlights{grid-template-columns:1fr;}
@@ -782,28 +766,22 @@
         <span class="eyebrow">About Us</span>
         <h2>Built On Teamwork</h2>
       </div>
-      <p>The Keystone Bills are a community youth football and cheerleading program created by parents, for families. We believe every kid deserves a spot on the team&mdash;<strong>no experience necessary, no kid sits out the season.</strong></p>
+      <p>The Keystone Bills are a community youth football and cheerleading program created by parents, for families. We believe every kid deserves a spot on the team&mdash;<strong>no experience necessary.</strong></p>
       <p>Our coaches are certified, background-checked volunteers who focus on the fundamentals: footwork, teamwork, and good sportsmanship, all wrapped in a fun, encouraging environment. Win or lose, every athlete walks off the field having learned something and made new friends.</p>
-      <p>Whether your child is picking up a football for the first time, learning their first cheer routine, or has been dreaming about game day all year, there's a place for them here. We are proud members of the <strong>Florida Elite Football Conference (FEFC)</strong> and compete as part of the <strong>Florida Elite League</strong>.</p>
+      <p>Whether your child is picking up a football for the first time, learning their first cheer routine, or has been dreaming about game day all year, there's a place for them here.</p>
       <div style="margin-top:28px;">
         <a href="https://fefc.league-magic.com/main_player_registration.asp?cid=KSB" target="_blank" rel="noopener" class="btn btn-primary">Register Your Athlete</a>
       </div>
     </div>
+    <div class="keystone-outline">
     <div class="keystone-frame">
       <img src="logo.png" alt="Keystone Bills logo" class="crest">
       <h3>Est. 1976</h3>
-      <p>Proudly serving young athletes and families in Odessa, FL and the surrounding community. Proud members of the <strong>Florida Elite League</strong>.</p>
+      <p>Proudly serving young athletes and families in Odessa, FL and the surrounding community.</p>
+    </div>
     </div>
   </div>
 </section>
-
-<!-- ============ LEAGUE BANNER ============ -->
-<div class="league-banner fade-in">
-  <div class="wrap">
-    <p>Proud Members Of</p>
-    <h2>The Florida Elite League</h2>
-  </div>
-</div>
 
 <!-- ============ WHY JOIN ============ -->
 <section class="why" id="why">
@@ -831,8 +809,8 @@
       <div class="why-item">
         <div class="why-icon">&#9733;</div>
         <div>
-          <h3>Every Athlete Gets Playing Time</h3>
-          <p>We believe development happens on the field&mdash;every athlete suits up and participates.</p>
+          <h3>Hard Work Earns the Spotlight</h3>
+          <p>Effort, attendance, and coachability at practice are what earn playing time and featured spots on game day.</p>
         </div>
       </div>
       <div class="why-item">
@@ -904,7 +882,7 @@
           <img src="logo.png" alt="Keystone Bills logo" class="crest">
           <div class="footer-brand-text">Keystone Bills</div>
         </div>
-        <p>A community youth football and cheerleading program built on teamwork, fundamentals, and fun. New athletes always welcome. Proud members of the Florida Elite League.</p>
+        <p>A community youth football and cheerleading program built on teamwork, fundamentals, and fun. New athletes always welcome.</p>
         <div class="footer-social">
           <a href="https://www.facebook.com/profile.php?id=61559928530484" aria-label="Facebook" target="_blank" rel="noopener">f</a>
           <a href="https://www.instagram.com/keystonebills_football/" aria-label="Instagram" target="_blank" rel="noopener">ig</a>
